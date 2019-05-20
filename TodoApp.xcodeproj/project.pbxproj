@@ -14,6 +14,8 @@
 		D824984F22928E7800C3D798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D824984D22928E7800C3D798 /* LaunchScreen.storyboard */; };
 		D824985A22928E7800C3D798 /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824985922928E7800C3D798 /* TodoAppTests.swift */; };
 		D824986522928E7800C3D798 /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824986422928E7800C3D798 /* TodoAppUITests.swift */; };
+		D824987322929B3B00C3D798 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824987222929B3B00C3D798 /* Todo.swift */; };
+		D824987522929D2F00C3D798 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824987422929D2F00C3D798 /* TodoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D824986022928E7800C3D798 /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D824986422928E7800C3D798 /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		D824986622928E7800C3D798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D824987222929B3B00C3D798 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		D824987422929D2F00C3D798 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				D824984B22928E7800C3D798 /* Assets.xcassets */,
 				D824984D22928E7800C3D798 /* LaunchScreen.storyboard */,
 				D824985022928E7800C3D798 /* Info.plist */,
+				D824987222929B3B00C3D798 /* Todo.swift */,
+				D824987422929D2F00C3D798 /* TodoItem.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D824984722928E7600C3D798 /* ViewController.swift in Sources */,
+				D824987322929B3B00C3D798 /* Todo.swift in Sources */,
+				D824987522929D2F00C3D798 /* TodoItem.swift in Sources */,
 				D824984522928E7600C3D798 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
