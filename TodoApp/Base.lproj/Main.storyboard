@@ -56,12 +56,35 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Todo" id="Cuh-ZG-0p9">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="O8k-gG-j49"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="O8k-gG-j49">
+                            <connections>
+                                <segue destination="ir8-LK-Y8b" kind="presentation" identifier="openAddItemSegue" id="5cC-3T-1Qa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="765.21739130434787" y="0.0"/>
+        </scene>
+        <!--Add new item-->
+        <scene sceneID="2sm-m3-sFv">
+            <objects>
+                <viewController id="Eyk-hZ-vDM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="btg-8Y-xji">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qZW-O2-A2O"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add new item" id="09H-Gx-N50">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kOX-KB-876"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="DUV-kC-AUO"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIg-rT-PKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2525" y="0.0"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H8c-4J-lYe">
@@ -80,6 +103,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTR-1m-VAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-142.02898550724638" y="0.0"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GBQ-2d-8Zi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ir8-LK-Y8b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qXg-eM-Cwa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Eyk-hZ-vDM" kind="relationship" relationship="rootViewController" id="Sjr-EW-rlH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGd-0y-aJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704" y="0.0"/>
         </scene>
     </scenes>
 </document>
