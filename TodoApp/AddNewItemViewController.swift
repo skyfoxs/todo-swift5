@@ -23,6 +23,11 @@ class AddNewItemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        titleTextField.becomeFirstResponder()
+    }
     
     @IBAction func doneButtonDidTap(_ sender: UIBarButtonItem) {
         if let title = titleTextField.text, !title.isEmpty {
