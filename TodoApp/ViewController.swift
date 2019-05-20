@@ -17,7 +17,9 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "todoItemCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "todoItemCell", for: indexPath)
+        cell.textLabel?.text = todo.item(at: indexPath.row).title
+        return cell
     }
 
     override func viewDidLoad() {
