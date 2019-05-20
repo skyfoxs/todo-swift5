@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddNewItemViewControllerDelegate {
 
+    @IBOutlet weak var tableView: UITableView?
     var todo = Todo()
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,11 +29,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
+    func addNewItemViewController(controller: AddNewItemViewController, didAdd item: TodoItem) {
+        todo.add(item: item)
+        if let index = todo.index(of: item) {
+            tableView?.insertRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
+        }
+        controller.dismiss(animated: true, completion: nil)
+    }
+
+    func addNewItemViewControllerDidCancel(controller: AddNewItemViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         todo.add(item: TodoItem(title: "Download XCode", isDone: true))
         todo.add(item: TodoItem(title: "Buy milk"))
         todo.add(item: TodoItem(title: "Learning Swift", isDone: false))
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openAddItemSegue" {
+            if let nav = segue.destination as? UINavigationController,
+                let controller = nav.topViewController as? AddNewItemViewController {
+                controller.delegate = self
+            }
+        }
     }
 }
 
