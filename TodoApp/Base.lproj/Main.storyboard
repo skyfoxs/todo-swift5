@@ -74,7 +74,39 @@
                     <view key="view" contentMode="scaleToFill" id="btg-8Y-xji">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xS2-tn-YB2">
+                                <rect key="frame" x="15" y="118" width="384" height="69"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YCg-gj-WzC">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFy-a9-8ta">
+                                        <rect key="frame" x="0.0" y="38" width="384" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is done" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqc-Ul-J1H">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-bz-AEC">
+                                                <rect key="frame" x="335" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xS2-tn-YB2" firstAttribute="top" secondItem="qZW-O2-A2O" secondAttribute="top" constant="30" id="RLk-eK-rpk"/>
+                            <constraint firstItem="xS2-tn-YB2" firstAttribute="leading" secondItem="qZW-O2-A2O" secondAttribute="leading" constant="15" id="WiC-y7-Oha"/>
+                            <constraint firstItem="qZW-O2-A2O" firstAttribute="trailing" secondItem="xS2-tn-YB2" secondAttribute="trailing" constant="15" id="iyp-Pf-TeP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qZW-O2-A2O"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add new item" id="09H-Gx-N50">
@@ -84,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rIg-rT-PKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2525" y="0.0"/>
+            <point key="canvasLocation" x="2524.6376811594205" y="0.0"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H8c-4J-lYe">
