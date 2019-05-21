@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TodoListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ItemDetailViewControllerDelegate, TodoItemTableViewCellDelegate {
+class TodoListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ItemDetailViewControllerDelegate, TodoItemTableViewCellDelegate, UITableViewDragDelegate {
 
     @IBOutlet weak var tableView: UITableView?
     var todo = Todo()
@@ -36,6 +36,11 @@ class TodoListViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "openEditItemSegue", sender: todo.item(at: indexPath.row))
+    }
+
+    // MARK: - TableViewDragDelegate
+    func tableView(_ tableView: UITableView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
+        return [UIDragItem(itemProvider: NSItemProvider())]
     }
 
     // MARK: - ItemDetailViewControllerDelegate
@@ -76,6 +81,9 @@ class TodoListViewController: UIViewController, UITableViewDataSource, UITableVi
         todo.add(item: TodoItem(title: "Download XCode", isDone: true))
         todo.add(item: TodoItem(title: "Buy milk"))
         todo.add(item: TodoItem(title: "Learning Swift", isDone: false))
+
+        tableView?.dragDelegate = self
+        tableView?.dragInteractionEnabled = true
     }
 
     // MARK: - Navigation
