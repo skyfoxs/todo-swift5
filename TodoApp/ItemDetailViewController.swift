@@ -22,7 +22,8 @@ class ItemDetailViewController: UIViewController {
     @IBOutlet weak var isDoneSwitch: UISwitch!
 
     var todoItem: TodoItem?
-    
+
+    // MARK: - Initial Page
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,7 +40,8 @@ class ItemDetailViewController: UIViewController {
         super.viewDidAppear(animated)
         titleTextField.becomeFirstResponder()
     }
-    
+
+    // MARK: - Button Action
     @IBAction func doneButtonDidTap(_ sender: UIBarButtonItem) {
         guard let title = titleTextField.text, !title.isEmpty else {
             return
