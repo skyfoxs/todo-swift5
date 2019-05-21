@@ -20,8 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoItemCell", for: indexPath) as! TodoItemTableViewCell
         let item = todo.item(at: indexPath.row)
-        cell.titleLabel?.text = item.title
-        cell.checkboxButton?.setImage(UIImage(named: item.isDone ? "check": "uncheck"), for: .normal)
+        cell.configure(item: item)
         return cell
     }
 

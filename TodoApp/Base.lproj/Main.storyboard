@@ -22,15 +22,15 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="todoItemCell" id="LPM-gr-RV9" customClass="TodoItemTableViewCell" customModule="TodoApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="todoItemCell" rowHeight="52" id="LPM-gr-RV9" customClass="TodoItemTableViewCell" customModule="TodoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LPM-gr-RV9" id="zaT-5e-GLJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="51.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jpw-ZB-EMS">
-                                                    <rect key="frame" x="15" y="4" width="356" height="35.5"/>
+                                                    <rect key="frame" x="15" y="8" width="356" height="35.5"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRZ-VE-0vm">
                                                             <rect key="frame" x="0.0" y="0.0" width="35.5" height="35.5"/>
@@ -51,9 +51,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="jpw-ZB-EMS" firstAttribute="leading" secondItem="zaT-5e-GLJ" secondAttribute="leading" constant="15" id="ehe-rE-jtx"/>
-                                                <constraint firstAttribute="bottom" secondItem="jpw-ZB-EMS" secondAttribute="bottom" constant="4" id="eol-OQ-jJM"/>
+                                                <constraint firstAttribute="bottom" secondItem="jpw-ZB-EMS" secondAttribute="bottom" constant="8" id="eol-OQ-jJM"/>
                                                 <constraint firstAttribute="trailing" secondItem="jpw-ZB-EMS" secondAttribute="trailing" constant="5" id="lDa-KO-4pp"/>
-                                                <constraint firstItem="jpw-ZB-EMS" firstAttribute="top" secondItem="zaT-5e-GLJ" secondAttribute="top" constant="4" id="xBF-ON-tww"/>
+                                                <constraint firstItem="jpw-ZB-EMS" firstAttribute="top" secondItem="zaT-5e-GLJ" secondAttribute="top" constant="8" id="xBF-ON-tww"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
