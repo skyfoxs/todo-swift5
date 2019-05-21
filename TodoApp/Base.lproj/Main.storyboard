@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rpj-9G-jqv">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="todoItemCell" rowHeight="52" id="LPM-gr-RV9" customClass="TodoItemTableViewCell" customModule="TodoApp" customModuleProvider="target">
@@ -138,7 +138,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qZW-O2-A2O"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add new item" id="09H-Gx-N50">
+                    <navigationItem key="navigationItem" title="Add new item" largeTitleDisplayMode="never" id="09H-Gx-N50">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kOX-KB-876">
                             <connections>
                                 <action selector="cancelButtonDidTap:" destination="Eyk-hZ-vDM" id="mI0-az-o8X"/>
@@ -164,8 +164,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IW0-GO-mPe" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rOc-v0-pQ2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="rOc-v0-pQ2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
