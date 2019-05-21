@@ -23,6 +23,10 @@ class ItemDetailViewController: UIViewController {
 
     var todoItem: TodoItem?
 
+    var isInEditMode: Bool {
+        return todoItem != nil
+    }
+
     // MARK: - Initial Page
     override func viewDidLoad() {
         super.viewDidLoad()

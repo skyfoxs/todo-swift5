@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="todoItemCell" rowHeight="52" id="LPM-gr-RV9" customClass="TodoItemTableViewCell" customModule="TodoApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="todoItemCell" rowHeight="52" id="LPM-gr-RV9" customClass="TodoItemTableViewCell" customModule="TodoApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LPM-gr-RV9" id="zaT-5e-GLJ">
@@ -89,7 +89,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Rpj-9G-jqv" id="bxd-gu-xI5"/>
-                        <segue destination="ir8-LK-Y8b" kind="presentation" identifier="openEditItemSegue" id="daG-ra-W2e"/>
+                        <segue destination="Eyk-hZ-vDM" kind="show" identifier="openEditItemSegue" id="5EU-cl-u1X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -193,13 +193,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGd-0y-aJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1622" y="0.0"/>
+            <point key="canvasLocation" x="1603" y="352"/>
         </scene>
     </scenes>
     <resources>
         <image name="check" width="36" height="36"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="daG-ra-W2e"/>
+        <segue reference="5EU-cl-u1X"/>
     </inferredMetricsTieBreakers>
 </document>
